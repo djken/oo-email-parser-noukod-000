@@ -13,7 +13,6 @@ class EmailParser
     end
     .flatten.uniq 
   end 
-  end
 end
 
 # emails. The parse method on the class should separate them into
