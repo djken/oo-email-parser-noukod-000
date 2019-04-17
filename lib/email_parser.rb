@@ -7,9 +7,7 @@ class EmailParser
   end
   
   def parse
-   emails_list.split.collect do |each_email|
-      each_email.split(',') 
-    end
+   emails_list.split.collect {|each_email| each_email.split(',') }
     .flatten.uniq 
   end 
 end
